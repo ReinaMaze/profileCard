@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <div class="card-content">
+            <div class="card-header">
+                <figure>
+                    <img 
+                        src="images/myPic.jpg" 
+                        alt="Profile picture of murna Peter"
+                        data-testid="test-user-avatar"
+                    >
+                </figure>
+                
+                <div class="profile-info">
+                    <header>
+                        <h1 data-testid="test-user-name">Murna</h1>
+                    </header>
+                    
+                    <p data-testid="test-user-bio">
+                        Full-stack developer passionate about creating accessible and inclusive web experiences. 
+                        I love building tools that make the internet a better place for everyone.
+                    </p>
+                    
+                    <div class="timestamp" data-testid="test-user-time" aria-label="Profile timestamp in milliseconds">
+                        Loading...
+                    </div>
+                    
+                    <nav data-testid="test-user-social-links" aria-label="Social media links">
+                        <ul class="social-links">
+                            <li>
+                                <span 
+                                    class="social-pill"
+                                    data-testid="test-user-social-twitter"
+                                    aria-label="Twitter profile"
+                                >
+                                <img class="social-icon" src="images/twitter.png" alt="Twitter icon for Sarah Johnson">
+                                </span>
+                            </li>
+                            <li>
+                                <span 
+                                    class="social-pill"
+                                    data-testid="test-user-social-github"
+                                    aria-label="GitHub profile"
+                                >
+                                <img class="social-icon" src="images/github.png" alt="GitHub icon for Sarah Johnson">
+                                </span>
+                            </li>
+                            <li>
+                                <span 
+                                    class="social-pill"
+                                    data-testid="test-user-social-linkedin"
+                                    aria-label="LinkedIn profile"
+                                >
+                                <img class="social-icon" src="images/linkedin.jpeg" alt="LinkedIn icon for Sarah Johnson">
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="details-grid">
+                <section>
+                    <h2>Hobbies</h2>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Gisting</li>
+                        <li>Eating</li>
+                        <li>Shopping</li>
+                        <li>Reading Novels</li>
+                        <li>Watching Football</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Dislikes</h2>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Inaccessible websites</li>
+                        <li>Loud People</li>
+                        <li>Cold Meals</li>
+                        <li>Being Broke</li>
+                        <li>Unnecessary meetings</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
