@@ -63,3 +63,27 @@ All elements include `data-testid` attributes:
 
 ##  License
 # profileCard
+
+# Frontend Wizards - Stage 1
+
+## Project Overview
+This project is a continuation of Stage 0, adding two new pages: About Me and Contact Us.
+
+## Files Structure
+- `about.html` - About Me page with personal bio and reflections
+- `about.css` - Styling for About Me page
+- `contact.html` - Contact form with validation (HTML + JavaScript)
+- `contact.css` - Styling for Contact Us page
+
+## Features
+- **About Me Page**: Includes bio, goals, confidence areas, future note, and extra thoughts with semantic HTML
+- **Contact Us Page**: Form with real-time validation for name, email, subject, and message fields
+- **Accessibility**: All forms use proper labels, ARIA attributes, and keyboard navigation
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices
+- **Form Validation**: Email format check, required fields, and minimum character validation
+
+## Technologies Used
+HTML5, CSS3, JavaScript (Vanilla)
+
+## How to Run
+Open `about.html` or `contact.html` in any modern web browser.

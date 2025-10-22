@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.required {
+  color: #e74c3c;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+input.invalid,
+textarea.invalid {
+  border-color: #e74c3c;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5568d3;
+}
+
+button:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.error-message {
+  display: block;
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  min-height: 1.2rem;
+}
+
+.success-message {
+  display: none;
+  background: #2ecc71;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.success-message.show {
+  display: block;
+}
+
+/* Style for the container */
+.contact-btn {
+  text-align: center;        /* Centers the links */
+  margin-top: 20px;
+}
+
+/* Style for the links inside the container */
+.contact-btn a {
+  background-color: #667eea; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+/* Hover effect */
+.contact-btn a:hover {
+  background-color: #5568d3; 
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  main {
+    padding: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  input,
+  textarea,
+  button {
+    font-size: 0.9rem;
+  }
+}
